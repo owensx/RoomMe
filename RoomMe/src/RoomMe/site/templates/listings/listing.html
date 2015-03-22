@@ -1,0 +1,11 @@
+{% load staticfiles %}
+{{ id }}
+{{ address }}
+{{imgUrls}}
+{% for imgUrl in imgUrls %}
+<img src={% static imgUrl %} />
+{% endfor %}
+
+<form action='/addUserToListing/{{ id }}'>
+<input type="submit" value="I'm Interested!">
+</form>

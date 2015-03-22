@@ -1,0 +1,20 @@
+{% load static %}
+
+<script type="text/javascript" src="{% static 'dropzone/dropzone.js' %}"></script>
+<link rel="stylesheet" href="{% static 'dropzone/dropzone.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'dist/css/bootstrap-theme.min.css' %}" type="text/css">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+    	<h3>DropzoneJS Upload Example - http://www.dropzonejs.com/</h3>  
+    </div>
+  </div><!--/row-->
+  <hr>
+  <div> 
+      <form action="/addListingPics.html" class="dropzone" drop-zone="" id="file-dropzone">{% csrf_token %}</form>
+  </div>
+</div>
+      
+      
